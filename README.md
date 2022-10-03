@@ -1,1 +1,2 @@
-# BattleShip
+# BattleShip Game 
+Amiral battı (Battleship) `2` kişilik strateji ve düşünce tabanlı bir oyundur. Her oyuncu gemi filosunu diğer oyuncudan gizlediği, önceden `dikey` ve `yatay` koordinatların belirli olduğu bir alanda oynanır. Oyuncular sırasıyla koordinat belirtip `atış` yaparlar ve diper oyuncunun gemilerinin yerlerini bulup batırmaya çalışırlar.
