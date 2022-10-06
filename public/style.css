@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+}
+
+
+.grid-user {
+    width: 400px;
+    height: 400px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    margin: 20px;
+}
+
