@@ -17,4 +17,5 @@ Amiral battı (Battleship), **`2`** kişilik strateji ve düşünce tabanlı bir
 
 ## Görüntüler
 ![Anasayfa](https://github.com/kaansertel/BattleShip/blob/master/images/01_Anasayfa.jpg)
-
+Sol kısımdaki bölüm bizim gemilerimizi yerleştireceğimiz bölümdür. Sağ kısımdaki board ise Bilgisayarın gemilerini yerleştirdiği bölümdür.
+![SinglePlayer](https://github.com/kaansertel/BattleShip/blob/master/images/02_SinglePlayer.jpg)
