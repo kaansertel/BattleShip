@@ -10,10 +10,10 @@ Amiral battı (Battleship), **`2`** kişilik strateji ve düşünce tabanlı bir
 ## Gemiler
 | Adet | Gemi | Kapladığı Alan |
 |------|------|----------------|
-|   1  |Amiral Gemisi|       4        |
-|   2  |Kruvazör Gemisi|       3        |
-|   3  |Muhrip Gemisi|       2        |
-|   4  |Denizaltı Gemisi|       1        |
+|   1  |Amiral Gemisi|       5        |
+|   1  |Kruvazör Gemisi|       4        |
+|   2  |Muhrip Gemisi|       3        |
+|   1  |Denizaltı Gemisi|       2        |
 
 ## 
 
