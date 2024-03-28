@@ -22,7 +22,8 @@ Anasayfa Görüntüsü
 ![Anasayfa](https://github.com/kaansertel/BattleShip/blob/master/images/01_Anasayfa.jpg)
 
 ```sh
-Sol kısımdaki bölüm bizim gemilerimizi yerleştireceğimiz bölümdür. Sağ kısımdaki board ise Bilgisayarın gemilerini yerleştirdiği bölümdür
+Sol kısımdaki bölüm bizim gemilerimizi yerleştireceğimiz bölümdür
+Sağ kısımdaki board ise Bilgisayarın gemilerini yerleştirdiği bölümdür
 ``` 
 
 ![SinglePlayer](https://github.com/kaansertel/BattleShip/blob/master/images/02_SinglePlayer.jpg)
