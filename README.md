@@ -33,3 +33,13 @@ Sağ kısımdaki board ise Bilgisayarın gemilerini yerleştirdiği bölümdür
 Bu sayede kendi alanımıza çevrilmiş gemilerimizi istediğimiz şekilde yerleştirebiliriz
 ``` 
 ![Rotate](https://github.com/kaansertel/BattleShip/blob/master/images/04_RotateShip.jpg)
+
+```sh
+“Start Game” buttonuna basarak oyuna başlayabiliriz
+ Rakibimizin alanına bir atış yaparız
+Eğer bu atış siyah ise ıskalamış oluruz ve sıra rakibe (bilgisayara) geçer ve o bizim alanımıza bir atış yapar
+Eğer atış kırmızı ise isabet ettirmiş oluruz ve atış hakkı yine bizde kalır
+Iskalayana kadar atış yapılabilir
+Rakibin bütün gemilerini batıran oyunu kazanmış olur
+``` 
+![05](https://github.com/kaansertel/BattleShip/blob/master/images/05.png)
