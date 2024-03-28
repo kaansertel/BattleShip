@@ -27,3 +27,9 @@ Sağ kısımdaki board ise Bilgisayarın gemilerini yerleştirdiği bölümdür
 ``` 
 
 ![SinglePlayer](https://github.com/kaansertel/BattleShip/blob/master/images/02_SinglePlayer.jpg)
+
+```sh
+“Rotate Your Ships” buttonuyla gemilerimizi çevirebilir
+Bu sayede kendi alanımıza çevrilmiş gemilerimizi istediğimiz şekilde yerleştirebiliriz
+``` 
+![Rotate](https://github.com/kaansertel/BattleShip/blob/master/images/04_RotateShip.jpg)
