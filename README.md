@@ -15,5 +15,6 @@ Amiral battı (Battleship), **`2`** kişilik strateji ve düşünce tabanlı bir
 |   2  |Muhrip Gemisi|       3        |
 |   1  |Denizaltı Gemisi|       2        |
 
-## 
+## Görüntüler
+![Anasayfa](https://github.com/kaansertel/BattleShip/blob/master/images/01_Anasayfa.jpg)
 
