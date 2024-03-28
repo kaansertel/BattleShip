@@ -92,3 +92,11 @@ Player 1 odayı terk ederse, Player 2 → Player 1 olacaktır ve 2. oyuncunun od
 ```
 ![10](https://github.com/kaansertel/BattleShip/blob/master/images/08.png)
 
+```sh
+Oyun bitimini görmektesiniz
+Oyun bittiği zaman oyuncular 10 saniye içerisinde Lobiye yönlendirilmektedir
+Kazanan oyuncu için winSound, kaybeden oyuncu için loseSound ses efekti çalmaktadır
+```
+![11](https://github.com/kaansertel/BattleShip/blob/master/images/09.png)
+![12](https://github.com/kaansertel/BattleShip/blob/master/images/10.png)
+
