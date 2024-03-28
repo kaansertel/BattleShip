@@ -68,8 +68,27 @@ Gemilerini yerleştirip “Start Game” buttonuna bastığı zamanda Ready kıs
 Aynı şeyler 2. Oyuncu içinde geçerlidir
 İki oyuncuda hazır hale geldiğinde oyunumuz başlayacaktır
 ```
-![08](https://github.com/kaansertel/BattleShip/blob/master/images/6.png)
+![08](https://github.com/kaansertel/BattleShip/blob/master/images/06.png)
+
+```sh
+Oda içerisinde tek oyuncu bulunmaktadır
+Bu yüzden Player 2 için Connected yazısı inaktif durumdadır
+```
+![09](https://github.com/kaansertel/BattleShip/blob/master/images/07.png)
 
 
-
+```sh
+2 oyuncunun gözünden de ekranı görmektesiniz
+Player 2 odaya katılmış ve Connected yazısı aktif edilmiştir
+Player 1 gemilerini yerleştirip “Start Game” butonuna basmıştır ve bu sayede Ready durumuna geçmiştir
+Oyuncular real time olarak bu değişiklikleri görmektedirler
+Player 2’nin gemileri yerleştirip Ready durumuna geçmesi beklenmektedir
+İki oyuncuda hazır oldukları zaman oyun Player 1’in önceliğinde başlayacaktır
+Oyun başladıktan sonra kullanıcılardan herhangi birisinin odayı terk etmesi durumunda oyun sıfırlanacaktır
+Player 1 odayı terk ederse, Player 2 → Player 1 olacaktır ve 2. oyuncunun odaya katılması beklenecektir
+(İlk atış hakkı Player 1’e aittir)
+•	Oyun başlamadan Player 1’in odayı terk etmesi Player 2’nin Player 1 olmasını sağlamamaktadır
+• Player 1, katılımcılar için uygun hale gelecektir
+```
+![10](https://github.com/kaansertel/BattleShip/blob/master/images/08.png)
 
