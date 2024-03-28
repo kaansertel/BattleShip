@@ -1,0 +1,27 @@
+{
+  "name": "web-server",
+  "version": "1.0.0",
+  "description": "Amiral battı (Battleship), **`2`** kişilik strateji ve düşünce tabanlı bir oyundur. Her oyuncu gemi filosunu diğer oyuncudan gizlediği, önceden **`dikey`** ve **`yatay`** koordinatların belirli olduğu bir alanda oynar. Oyuncular sırasıyla koordinat belirtip **`atış`** yaparlar ve diğer oyuncunun gemilerinin yerlerini bulup batırmaya çalışırlar.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaansertel/BattleShip.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaansertel/BattleShip/issues"
+  },
+  "homepage": "https://github.com/kaansertel/BattleShip#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "socket.io": "^4.5.3"
+  }
+}

@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.semanticui.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.12.1/js/dataTables.semanticui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Rooms</title>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable({
+                "oLanguage": {
+                "sSearch": ""
+                },
+                language: {
+                searchPlaceholder: "Search...",
+                "emptyTable": "No rooms available now, <b>create new room please.</b>"
+                
+    }
+
+});
+            });
+
+
+        </script>
+<div class="roomList">
+    <h1 class="splash-title" style="font-size:63px;">Room List</h1>
+<hr>
+    <div style="width:100%; display: flex;" >
+        <div style="width:50%">
+            <table id="example" class="ui celled table" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Room</th>
+                        <th>Join</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <script>
+                            
+                            var table = $("#example tbody");
+                            const rooms = '<%= rooms %>'
+                            const roomList = rooms.split(',')
+                            function createRoom(){
+                                var name = document.getElementById('input-room-name').value.split(" ").join("")
+                                name = name.split("İ").join("i")
+                                name = name.toLowerCase()
+
+                                window.location.reload();
+                                if (name !='' && !(roomList.includes(name))) {
+                                    //roomList.push(name)
+                                    //table.append(`<tr><td>${name}</td> <td><button class="btn-2"> <b>Join</b></button></td></tr>`)
+                                    //$("example").DataTable();
+                                    //document.body.innerHTML += `<tr><td>${name}</td> <td><button class="btn-2"> <b>Join</b></button></td></tr>`
+                                    //document.body.innerHTML += `<a href="/room?name=${name}">${name}</a><br /> <br />`
+                                    httpGet(name);
+                                    window.location.reload();
+                                }
+                            }
+                            function httpGet(name){
+                                var xmlHttp = new XMLHttpRequest();
+                                xmlHttp.open("GET", `/addRoom?name=${name}`,false)
+                                xmlHttp.send(null)
+                                return xmlHttp.responseText;
+                            }
+                            function onlyUnique(value, index, self) {
+                                return self.indexOf(value) === index;
+                            }
+                            
+                            var unique = roomList.filter(onlyUnique);
+                            
+                            for(const name of unique){
+                                if (name !='') {
+                                    table.append(`<tr><td>${name}</td> <td> <a href="/room?name=${name}"> <button class="btn-2"> <b>Join</b></button></a> </td></tr>`)
+                                    //$("example").DataTable();
+                                    //document.body.innerHTML += `<tr><td>${name}</td> <td><button class="btn-2"> <b>Join</b></button></td></tr>`
+                                    //document.body.innerHTML += `<a href="/room?name=${name}">${name}</a><br /> <br />`;
+                                }
+                            }
+                        
+                        </script>
+                </tbody>
+            </table> 
+        </div>
+        <div style=" padding-left:  1%; height: 100%; display: flex;" class="ui action input">
+    <input id='input-room-name' maxlength=20 type="text" placeholder="Room...">
+    <button onclick="createRoom()" style="font-style:italic; font-weight:bold" class="btn-3"> Create Room</button>
+        </div>
+    </div>
+</div>    
+    </body>
+</html>
